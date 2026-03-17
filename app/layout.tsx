@@ -21,7 +21,6 @@ export const metadata: Metadata = {
   title: "SIGNAL — Experimental Creative Studio",
   description:
     "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
@@ -47,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark bg-background">
+    <html lang="pt-br" className="dark bg-background">
       <body
         className={`${ibmPlexSans.variable} ${bebasNeue.variable} ${ibmPlexMono.variable} font-sans antialiased overflow-x-hidden`}
       >
