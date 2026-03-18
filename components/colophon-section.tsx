@@ -96,7 +96,6 @@ export function ColophonSection() {
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">Next.js</li>
             <li className="font-mono text-xs text-foreground/80">Python</li>
-            <li className="font-mono text-xs text-foreground/80">Vercel</li>
           </ul>
         </div>
 
