@@ -18,25 +18,25 @@ const ibmPlexMono = IBM_Plex_Mono({
 const bebasNeue = Bebas_Neue({ weight: "400", subsets: ["latin"], variable: "--font-bebas" })
 
 export const metadata: Metadata = {
-  title: "SIGNAL — Experimental Creative Studio",
+  title: "Diogo Antunes - Network Automations",
   description:
-    "Interface studies in controlled environments. We design systems that behave, not just screens that display.",
+    "Site em desenvolvimento.",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/downloads/letra-d.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/downloads/letra-d.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/downloads/letra-d.png",
+        type: "image/png",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/downloads/letra-d.png",
   },
 }
 

@@ -53,8 +53,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </a>
             <br />
             <a
-              href="/downloads/parser_nokia_olt_avacado.xlsx"
-              download
+                           download
               className="underline decoration-accent/60 hover:text-foreground transition-colors"
             >
               Baixar script de exemplo

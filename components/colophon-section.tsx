@@ -85,8 +85,7 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Design</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">Signal Studio</li>
-            <li className="font-mono text-xs text-foreground/80">Interface Lab</li>
+            <li className="font-mono text-xs text-foreground/80">Diogo Antunes</li>
           </ul>
         </div>
 
@@ -95,12 +94,12 @@ export function ColophonSection() {
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Stack</h4>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">Next.js</li>
-            <li className="font-mono text-xs text-foreground/80">Tailwind CSS</li>
+            <li className="font-mono text-xs text-foreground/80">Python</li>
             <li className="font-mono text-xs text-foreground/80">Vercel</li>
           </ul>
         </div>
 
-        {/* Typography */}
+        {/* Typography 
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Typography</h4>
           <ul className="space-y-2">
@@ -109,6 +108,7 @@ export function ColophonSection() {
             <li className="font-mono text-xs text-foreground/80">Geist Mono</li>
           </ul>
         </div>
+        */}
 
         {/* Location */}
         <div className="col-span-1">
@@ -146,7 +146,7 @@ export function ColophonSection() {
         <div className="col-span-1">
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Year</h4>
           <ul className="space-y-2">
-            <li className="font-mono text-xs text-foreground/80">2025</li>
+            <li className="font-mono text-xs text-foreground/80">2026</li>
             <li className="font-mono text-xs text-foreground/80">Jundiaí/SP</li>
           </ul>
         </div>
@@ -158,7 +158,7 @@ export function ColophonSection() {
         className="mt-24 pt-8 border-t border-border/20 flex flex-col md:flex-row md:items-center md:justify-between gap-4"
       >
         <p className="font-mono text-[10px] text-muted-foreground uppercase tracking-widest">
-          © 2026 Signal. All rights reserved.
+          © 2026 Diogo Antunes. All rights reserved.
         </p>
         <p className="font-mono text-[10px] text-muted-foreground">Designed with intention. Built with precision.</p>
       </div>
