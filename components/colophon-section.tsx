@@ -86,6 +86,7 @@ export function ColophonSection() {
           <h4 className="font-mono text-[9px] uppercase tracking-[0.3em] text-muted-foreground mb-4">Design</h4>
           <ul className="space-y-2">
             <li className="font-mono text-xs text-foreground/80">Diogo Antunes</li>
+            <li className="font-mono text-xs text-foreground/80">Fabrício Magoga</li>
           </ul>
         </div>
 
