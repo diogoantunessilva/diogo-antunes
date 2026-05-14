@@ -3,6 +3,7 @@ import Link from "next/link"
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const isSirene = slug === "sirene-modbus"
+  const isArtigo = slug === "projeto-artigo"
 
   return (
     <main className="relative min-h-screen px-6 md:px-12 py-24">
@@ -18,7 +19,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
       <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_420px] gap-10 items-start">
         <div>
           <h1 className="font-[var(--font-bebas)] text-5xl md:text-7xl tracking-tight">
-            {isSirene ? "Sistema de sirene via Modbus" : "Projeto em desenvolvimento"}
+            {isSirene
+              ? "Sistema de sirene via Modbus"
+              : isArtigo
+                ? "Desenvolvimento de artigo para revista"
+                : "Projeto em desenvolvimento"}
           </h1>
           <p className="mt-6 max-w-2xl font-mono text-sm text-muted-foreground leading-relaxed">
             {isSirene ? (
@@ -43,6 +48,29 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                   className="underline decoration-accent/60 hover:text-foreground transition-colors"
                 >
                   Abrir repositório/demonstração
+                </a>
+              </>
+            ) : isArtigo ? (
+              <>
+                Projeto acadêmico com foco em phishing, pesquisa aplicada e conscientização em segurança da
+                informação.
+                <br />
+                <br />
+                <strong>Dados:</strong> pesquisa de campo sobre ataques mais comuns, técnicas usadas e nível de
+                conscientização dos usuários.
+                <br />
+                <br />
+                <strong>Aplicação:</strong> desenvolvimento de site para apresentar tendências e práticas de prevenção.
+                <br />
+                <br />
+                <strong>Link do projeto:</strong>{" "}
+                <a
+                  href="https://atividade-phishing-fatec.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-accent/60 hover:text-foreground transition-colors"
+                >
+                  Abrir demonstração
                 </a>
               </>
             ) : (
