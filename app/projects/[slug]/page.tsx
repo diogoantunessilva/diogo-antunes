@@ -53,7 +53,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             </a>
             <br />
             <a
-                           download
+              /*</p>href="/downloads/parser_nokia_olt_avancado.py"*/
+              download
               className="underline decoration-accent/60 hover:text-foreground transition-colors"
             >
               Baixar script de exemplo
@@ -65,7 +66,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </p>
         </div>
         
-        {showVideo && (
+        {/* {showVideo && (
           <aside className="lg:sticky lg:top-40">
             <div className="border border-border/40 rounded-lg overflow-hidden bg-black/40">
               <video
@@ -79,7 +80,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               />
             </div>
           </aside>
-        )}
+        )/* IGNORE *} */}
       </div>
     </main>
   )

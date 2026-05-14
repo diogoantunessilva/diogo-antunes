@@ -12,23 +12,23 @@ const experiments = [
   {
     title: "Projeto de automação em python ",
     medium: "Enfase em OLT-NOKIA (Em processo de desenvolvimento) ",
-    description: "Com base em arquivo.txt é possível efetuar a leitura e analise e export para excel para encaminhamento de eventos a equipe de atendimento ao cliente. .",
+    description: "Clique aqui para visualizar o projeto.",
     span: "col-span-2 row-span-2",
     slug: "automacao-python",
   },
   {
-    title: "Encaminhamento de alertas do zabbix.",
-    medium: "Via chat-bot no telegram (Em processo de desenvolvimento)",
+    title: "Desenvolvimento de artigo para revista.",
+    medium: "Trabalho sobre phishing na Fatec Jundiaí",
     description: "Clique aqui para visualizar o projeto.",
     span: "col-span-1 row-span-1",
-    slug: "alertas-zabbix",
+    slug: "projeto-artigo",
   },
   {
-    title: "Processos automatizados no excel.",
-    medium: "Controle e estaticas (Em processo de desenvolvimento)",
+    title: "Sistema de sirene via Modbus.",
+    medium: "Controle e gerenciamento de CLPs",
     description: "Clique aqui para visualizar o projeto.",
     span: "col-span-1 row-span-1",
-    slug: "automatizacoes-excel",
+    slug: "sirene-modbus",
   },
 ]
 
@@ -141,7 +141,7 @@ function WorkCard({
   const isActive = isHovered || isScrollActive
 
   return (
-    <Link href={`/projects/${experiment.slug}`} className="block">
+    <Link href={`/projects/${experiment.slug}/page-1`} className="block">
       <article
         ref={cardRef}
         className={cn(
