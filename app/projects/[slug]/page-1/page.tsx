@@ -37,7 +37,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                 <br />
                 <strong>Link do projeto:</strong>{" "}
                 <a
-                  href="sistema-modbus.vercel.app/"
+                  href="https://sistema-modbus.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline decoration-accent/60 hover:text-foreground transition-colors"
