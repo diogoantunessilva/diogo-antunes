@@ -4,6 +4,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params
   const isSirene = slug === "sirene-modbus"
   const isArtigo = slug === "projeto-artigo"
+  const isPython = slug === "automacao-python"
 
   return (
     <main className="relative min-h-screen px-6 md:px-12 py-24">
@@ -23,6 +24,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
               ? "Sistema de sirene via Modbus"
               : isArtigo
                 ? "Desenvolvimento de artigo para revista"
+                : isPython
+                  ? "Automação de dados via CLI em OLT-NOKIA"
                 : "Projeto em desenvolvimento"}
           </h1>
           <p className="mt-6 max-w-2xl font-mono text-sm text-muted-foreground leading-relaxed">
@@ -73,6 +76,39 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                   Abrir demonstração
                 </a>
               </>
+            ) : isPython ? (
+              <>
+                Este projeto é um script de automação de dados desenvolvido em Python, projetado para extrair
+                informações de OLTs da Nokia usando interface de linha de comando (CLI).
+                <br />
+                <br />
+                <strong>Funcionalidades:</strong> leitura de comandos da OLT Nokia para extrair status dos clientes,
+                nível de sinal e última queda, com exportação para arquivo Excel.
+                <br />
+                <br />
+                <strong>Tecnologias Utilizadas:</strong> Python, MobaXterm e openpyxl.
+                <br />
+                <br />
+                <strong>Demonstrativo de saída:</strong>{" "}
+                <a
+                  href="/downloads/ip-do-equipamento.xlsx"
+                  download
+                  className="underline decoration-accent/60 hover:text-foreground transition-colors"
+                >
+                  Baixar planilha de exemplo
+                </a>
+                <br />
+                <br />
+                <strong>Plataforma:</strong>{" "}
+                <a
+                  href="https://alaresb2b.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-accent/60 hover:text-foreground transition-colors"
+                >
+                  Acessar plataforma
+                </a>
+              </>
             ) : (
               <>Conteúdo desta rota ainda será adicionado.</>
             )}
@@ -83,11 +119,11 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </p>
         </div>
 
-        {isSirene && (
+        {(isSirene || isPython) && (
           <aside className="lg:sticky lg:top-40">
             <div className="border border-border/40 rounded-lg overflow-hidden bg-black/40">
               <video
-                src="/downloads/Demonstrativo-modbus.mp4"
+                src={isPython ? "/downloads/demonstrativo_python.mp4" : "/downloads/Demonstrativo-modbus.mp4"}
                 autoPlay
                 loop
                 muted

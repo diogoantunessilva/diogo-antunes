@@ -55,10 +55,6 @@ export function HeroSection() {
           </div>
         </SplitFlapAudioProvider>
 
-        <h2 className="font-[var(--font-bebas)] text-muted-foreground/60 text-[clamp(1rem,3vw,2rem)] mt-4 tracking-wide">
-          Scripts de automação de redes. (Em construção)
-        </h2>
-
         <p className="mt-12 max-w-md font-mono text-sm text-muted-foreground leading-relaxed">
           Estudante de Cibersegurança na FATEC - Jundiaí, com ênfase em automação de redes.
           <br />Sinta-se à vontade para entrar em contato comigo.
@@ -93,7 +89,7 @@ export function HeroSection() {
       {/* Floating info tag */}
       <div className="absolute bottom-8 right-8 md:bottom-12 md:right-12">
         <div className="border border-border px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-          Atualizado em 13/03/2026
+          Atualizado em 15/05/2026
         
         </div>
       </div>
