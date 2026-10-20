@@ -89,7 +89,7 @@ export function HeroSection() {
       {/* Floating info tag */}
       <div className="absolute bottom-8 right-8 md:bottom-12 md:right-12">
         <div className="border border-border px-4 py-2 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-          Atualizado em 15/05/2026
+          Atualizado em 19/10/2026
         
         </div>
       </div>

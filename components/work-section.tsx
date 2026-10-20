@@ -30,6 +30,20 @@ const experiments = [
     span: "col-span-1 row-span-1",
     slug: "sirene-modbus",
   },
+  {
+    title: "Comandos úteis PowerShell.",
+    medium: "Automação de tarefas e gerenciamento de sistemas Windows",
+    description: "Clique aqui para visualizar os arquivos.",
+    span: "col-span-1 row-span-1",
+    slug: "powershell-commands",
+  },
+  {
+    title: "Sistema de monitoramento de pacotes.",
+    medium: "Análise de tráfego de rede",
+    description: "Clique aqui para visualizar o projeto.",
+    span: "col-span-1 row-span-1",
+    slug: "monitoramento-pacotes",
+  },
 ]
 
 export function WorkSection() {

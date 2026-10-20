@@ -9,20 +9,21 @@ gsap.registerPlugin(ScrollTrigger)
 
 const signals = [
   {
-    date: "13/03/2026",
     title: "Excel ",
     note: "Planilhas de analises de clientes a partir de comandos procv e base de dados.",
   },
 
   {
-    date: "13/04/2026",
     title: "Python",
     note: "Automações de captura de comandos via SSH e utilização do MobaXterm como gerador de arquivos txt durante o uso da sessão.",
   },
   {
-    date: "13/04/2026",
     title: "Zabbix",
     note: "Automações de monitoramento e alertas para infraestrutura de rede usando Zabbix.",
+  },
+  {
+    title: "PowerShell",
+    note: "Automações de gerenciamento e configuração de sistemas Windows usando PowerShell.",
   },
 ]
 
@@ -151,7 +152,7 @@ function SignalCard({
   signal,
   index,
 }: {
-  signal: { date: string; title: string; note: string }
+  signal: { title: string; note: string }
   index: number
 }) {
   return (
@@ -172,7 +173,6 @@ function SignalCard({
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
             No. {String(index + 1).padStart(2, "0")}
           </span>
-          <time className="font-mono text-[10px] text-muted-foreground/60">{signal.date}</time>
         </div>
 
         {/* Title */}
